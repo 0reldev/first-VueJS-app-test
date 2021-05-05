@@ -7,9 +7,9 @@
                 <div class="col s6">
                     <a @click="restart" class="waves-effect waves-light btn"><i class="material-icons left">replay</i>Restart</a>
                 </div>
-                <!-- <div class="col s6">
+                <div class="col s6">
                     <a @click="stop" class="waves-effect waves-light btn"><i class="material-icons left">pause</i>Stop</a>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
             }
         },
         mounted() {
-            setInterval(() => {
+            this.$interval = setInterval(() => {
                 this.counter++            
             }, 1000)
         },
@@ -33,6 +33,9 @@
             restart() {
                 this.counter = 0;
             },
+            stop() {
+                clearInterval(this.$interval)
+            }
         }
     }
 </script>
