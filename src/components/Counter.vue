@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <h2>Counter component</h2>
+        <p>Example of a component using a counter which auto-increment each second. The count can restart or stop thanks to two methods called by the buttons below.</p>
         <div class="card-panel teal lighten-2 " id="counter">
             <h4>Counter: {{ counter }}</h4>
             <div class="row">
