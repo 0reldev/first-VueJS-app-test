@@ -5,18 +5,22 @@
     <hr>
     <Counter></Counter>
     <hr>
+    <HoverMessage></HoverMessage>
+    <hr>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import Counter from './components/Counter.vue';
+import HoverMessage from './components/HoverMessage.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Counter
+    Counter,
+    HoverMessage
   }
 }
 </script>
