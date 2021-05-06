@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="card-action">
-                   <a v-on:click="reverseMessage" class="waves-effect waves-light btn">reverse</a>
+                   <a v-on:click="reverseMessage" class="waves-effect waves-light btn"><i class="material-icons left">compare_arrows</i>reverse</a>
                 </div>
             </div>
         </div>
